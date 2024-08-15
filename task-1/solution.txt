@@ -1,0 +1,18 @@
+1-terminal@terminal-temple ~ $ mkdir Roaa
+2-terminal@terminal-temple ~ $ cd Roaa
+  terminal@terminal-temple Roaa $  touch one.txt two.txt three.txt four.txt
+3-terminal@terminal-temple Roaa $  mkdir Bad
+  terminal@terminal-temple Roaa $  cd Bad
+  terminal@terminal-temple Bad $  touch bad.txt
+4-terminal@terminal-temple Bad $  cd -
+  terminal@terminal-temple Roaa $ mv one.txt /home/terminal/Downloads
+  terminal@terminal-temple Roaa $ cd /home/terminal/Downloads
+5-terminal@terminal-temple Downloads $ cp one.txt copy.txt
+  terminal@terminal-temple Downloads $ cd ~
+6-terminal@terminal-temple ~ $ cd Roaa
+7-terminal@terminal-temple Roaa $ nano two.txt
+8-terminal@terminal-temple Roaa $ echo "1-hello OSC 2-hello OSC 3-hello OSC 4-hello OSC 5-hello OSC 6-hello OSC 7-hello OSC 8-hello OSC " > three.txt 
+9-terminal@terminal-temple Roaa $ mv three.txt hello.txt 
+10-terminal@terminal-temple Roaa $ rm four.txt
+11-terminal@terminal-temple Roaa $ rm -r Bad
+ 

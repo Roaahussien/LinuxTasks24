@@ -1,0 +1,21 @@
+1 osc@osc:~$ git config --global user.name "RoZer0"
+osc@osc:~$ git config --global user.email "hroaa172@gmail.com"
+2-osc@osc:~$ git clone https://github.com/Roaahussien/LinuxTasks24.git
+3-osc@osc:~$ cd LinuxTasks24
+osc@osc:~/LinuxTasks24$ mkdir task-2
+4-osc@osc:~/LinuxTasks24$ cd task-2
+osc@osc:~/LinuxTasks24/task-2$ touch greeting.txt
+5-osc@osc:~/LinuxTasks24/task-2$ nano greeting.txt
+6-osc@osc:~/LinuxTasks24/task-2$ git add greeting.txt
+osc@osc:~/LinuxTasks24/task-2$ git commit -m "Added greeting"
+7-osc@osc:~/LinuxTasks24/task-2$ git branch intro
+osc@osc:~/LinuxTasks24/task-2$ git checkout intro
+8-osc@osc:~/LinuxTasks24/task-2$ nano greeting.txt
+9-osc@osc:~/LinuxTasks24/task-2$ git commit -a 
+[intro 58e84e2] Added I love Git
+10-osc@osc:~/LinuxTasks24/task-2$ git checkout main
+osc@osc:~/LinuxTasks24/task-2$ git merge intro
+11-osc@osc:~/LinuxTasks24/task-2$ git tag -a v1
+12-osc@osc:~/LinuxTasks24/task-2$ git push origin v1
+
+

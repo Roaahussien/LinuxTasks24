@@ -16,6 +16,7 @@ osc@osc:~/LinuxTasks24/task-2$ git checkout intro
 10-osc@osc:~/LinuxTasks24/task-2$ git checkout main
 osc@osc:~/LinuxTasks24/task-2$ git merge intro
 11-osc@osc:~/LinuxTasks24/task-2$ git tag -a v1
-12-osc@osc:~/LinuxTasks24/task-2$ git push origin v1
+12-osc@osc:~/LinuxTasks24/task-2$ git push origin main 
+osc@osc:~/LinuxTasks24/task-2$ git push origin v1
 
 

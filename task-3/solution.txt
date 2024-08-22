@@ -1,0 +1,36 @@
+1-cd ~
+mkdir project_files
+2-cd project_files
+mkdir reports logs data
+3-cd reports
+touch report1.md report2.md
+4-cd logs
+5-cd data 
+6-nano data.csv
+cd ..
+cd reports
+nano report1.md
+cd ..
+cd logs
+nano system.log
+7-tar -cvf logs_backup.tar
+8-mv logs_backup.tar ~/project_files
+9-cd logs
+tar -xvf ~/project_files/logs_backup.tar
+10-find ~ -name "*.md"
+11-find ~/project_files -name "*.log"
+12-find ~/project_files -name "*file1.pdf"
+13-find ~/project_files -name "*.pdf"
+14-find ~/project_files/logs -type  f 
+15-ln -s ~/project_files/data/data.csv link_data.csv
+16-nano link_data.csv
+17-unlink link_data.csv
+18-cd ~/project_files
+touch summary.txt
+echo "summary Start" > summary.txt
+19-date >> summary.txt
+20-wc -l summary.txt | tee -a summary.txt 
+21-wc -w report1.md
+22-wc -m system.log >> summary.txt
+23-find . -type f -o -type d | wc -l >> summary.txt
+24-cat summary.txt

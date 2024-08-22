@@ -13,10 +13,9 @@ nano report1.md
 cd ..
 cd logs
 nano system.log
-7-tar -cvf logs_backup.tar
+7-tar -cvf logs_backup.tar *
 8-mv logs_backup.tar ~/project_files
-9-cd logs
-tar -xvf ~/project_files/logs_backup.tar
+9-tar -xvf ~/project_files/logs_backup.tar -C ~/project_files/logs
 10-find ~ -name "*.md"
 11-find ~/project_files -name "*.log"
 12-find ~/project_files -name "*file1.pdf"

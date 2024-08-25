@@ -1,0 +1,2 @@
+1-cut -d "," -f 2 info.csv | grep '^[[:alnum:]_.+-]\{1,\}@[[:alnum:]_.+-]\{1,\}\.[[:alpha:]]\{2,\}$'| sort | uniq > emails.txt
+2-ps -e --sort=cmd |awk '{print $1,$4}' > processes.txt
